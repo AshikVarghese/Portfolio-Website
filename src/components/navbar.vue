@@ -84,11 +84,25 @@
   <!-- Normal Navbar -->
   <div
     id="navbar"
-    class="flex flex-row justify-end sticky opacity-90 t-0 w-full h-80px border-solid border-b-[3px] border-accent border-opacity-50 bg-main-dark z-30"
+    class="flex flex-row justify-between sticky opacity-90 t-0 w-full h-20 border-solid border-b-[3px] border-accent border-opacity-50 bg-main-dark z-30"
   >
+    <!-- Logo -->
+    <div class="flex items-center">
+      <a
+        href="#hero"
+        @click.prevent="scrollToSection('#hero')"
+        class="flex items-center"
+      >
+        <img
+          src="/public/logo.png"
+          alt="Ashik logo"
+          class="h-[77px] pl-2 w-auto bg-main-dark"
+        />
+      </a>
+    </div>
     <!-- Item List -->
     <ul
-      class="nav-sm:hidden flex flex-row justify-end sticky t-0 opacity-90 w-full h-80px border-solid border-b-[3px] border-accent border-opacity-50 bg-main-dark z-50"
+      class="nav-sm:hidden flex flex-row justify-end sticky t-0 opacity-90 w-full h-20 border-solid border-b-[3px] border-accent border-opacity-50 bg-main-dark z-50"
     >
       <!-- About -->
       <li class="my-auto mx-1 p-5 text-main hover:text-accent bg-inherit">

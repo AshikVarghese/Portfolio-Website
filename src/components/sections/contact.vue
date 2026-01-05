@@ -21,7 +21,7 @@
         </button></a
       >
 
-      <a href="tel:+381695566136" class="ml-[10px]"
+      <a href="tel:+4915227391053" class="ml-[10px]"
         ><button
           class="w-50px h-50px bg-accent text-main my-5 bg-opacity-70 hover:bg-main hover:bg-opacity-30 hover:text-accent"
         >
