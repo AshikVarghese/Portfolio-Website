@@ -8,47 +8,41 @@
     special="true"
     title="Bold Sales CRM"
     description="A  dynamic and customizable CRM platform for managing sales, pipelines, and customer relationships."
-    :languages="['React TS', 'Next JS', 'Tailwind CSS', 'SASS']"
+    :languages="['React TS', 'Next JS', 'Tailwind CSS', 'SCSS']"
     gitLink=""
     exLink="https://syncfusion.boldsalescrm.com/"
-    imageURL="/images/theme1.png"
+    imageURL="/images/BoldSales.png"
   ></Tile>
 
   <Tile
     flip="true"
     special="true"
-    title="Travel Agency Web App"
-    description="A fully functioning frontend side of the travel agency web application, built using the MEAN tech stack."
-    :languages="['Angular', 'TypeScript', 'NodeJS', 'CSS']"
-    gitLink="https://github.com/AkosoCodes/Travel-Agency-Frontend"
+    title="Student Framework Portal"
+    description="A portal empowering college students and staff with a digital gateway to student DB, resources, collaboration, and growth, built using the MEAN stack."
+    :languages="['MYSQL', 'ExpressJS', 'React JS', 'NodeJS']"
+    gitLink="https://github.com/AshikVarghese/StudFrameworkFrontend"
     exLink=""
-    imageURL="/images/frontend.png"
+    imageURL="/images/StudentFramework.png"
   ></Tile>
 
   <Tile
     special="true"
-    title="Travel Agency API (Backend)"
-    description="A fully functioning backend side of the travel agency web application. It was built in JavaScript, and uses a non-relational MongoDB database."
-    :languages="[
-      'JavaScript (ES6)',
-      'NodeJS',
-      'ExpressJS',
-      'MongoDB',
-      'Mongoose',
-    ]"
-    gitLink="https://github.com/AkosoCodes/Travel-Agency-Frontend"
+    title="Alumni Database Portal"
+    description="A portal that connects graduates, enables networking, and fosters a strong alumni community."
+    :languages="['HTML', 'CSS & SCSS', 'JavaScript', 'EJS', 'MongoDB']"
+    gitLink="https://github.com/AshikVarghese/AlumniPortal"
     exLink=""
-    imageURL="images/backend.png"
+    imageURL="/images/AlumniDatabase.png"
   ></Tile>
 
   <Tile
     flip="true"
-    title="Connect Four Game"
-    description="The Connect 4 game is a classic strategy game in which players alternately place pieces on a grid. It is terminal based and built using C programming language. "
-    :languages="['C', 'Terminal']"
-    gitLink="https://github.com/AkosoCodes/Travel-Agency-Frontend"
+    title="D-Apps"
+    description="A secured decentralized mechanism using Ethereum blockchain. D-Apps are smart sytems/applications (like LMS, ERP, etc.) on a distributed network."
+    :languages="['React JS', 'Solidity', 'Web3.JS', 'Moralis']"
+    gitLink="https://github.com/AshikVarghese/D-Apps"
     exLink=""
-    imageURL="images/connectfour.png"
+    imageURL="images/DApps.png"
   ></Tile>
 
   <!-- /> Place Normal Tiles Here -->

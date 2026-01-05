@@ -7,7 +7,7 @@
   >
     <!-- Image -->
     <div class="ssm:hidden">
-      <a :href="gitLink" target="_blank">
+      <a :href="gitLink || exLink" target="_blank">
         <img
           class="w-[100%] opacity-50 hover:opacity-100 object-cover"
           :src="imageURL"
@@ -117,7 +117,7 @@
     <div
       class="w-3/6 object-cover flex justify-center align-center overflow-hidden"
     >
-      <a :href="gitLink" target="_blank">
+      <a :href="gitLink || exLink" target="_blank">
         <img
           class="opacity-50 hover:opacity-100 shrink-0 min-h-full min-w-full"
           :src="imageURL"
@@ -314,7 +314,7 @@
     <div
       class="w-3/6 object-cover flex justify-center align-center overflow-hidden"
     >
-      <a :href="gitLink" target="_blank">
+      <a :href="gitLink || exLink" target="_blank">
         <img
           class="opacity-50 hover:opacity-100 shrink-0 min-h-full min-w-full"
           :src="imageURL"
