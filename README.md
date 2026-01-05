@@ -1,16 +1,12 @@
 <h1 align="center">Personal Portfolio Website</h1>
 
-<p align="center">This is the first version of <a href="https://andrija-stankovic.netlify.app/">andrija-stankovic.netlify.app</a> built using Vue and Tailwind, and hosted by Netlify.</p>
+<p align="center">This is the first version of <a href="https://ashik-varghese.netlify.app/">ashik-varghese.netlify.app</a> built using Vue and Tailwind, and hosted by Netlify.</p>
 
 <p align="center">
-  <a href="https://app.netlify.com/sites/andrija-stankovic/deploys" target="_blank">
+  <a href="https://app.netlify.com/projects/ashik-varghese/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/00f37a7c-a758-40e3-abc3-941d326045b4/deploy-status" alt="Netlify Status" />
   </a>
 </p>
-
-<h2>😶‍🌫️ | Landing Page:</h2>
-
-![portfolio](https://user-images.githubusercontent.com/74971935/193226192-327b21a6-8dd1-4716-876f-0f3255268956.gif)
 
 ## 🧰 | Languages & Tools <a name="languages_&_tools"></a>
 
@@ -22,18 +18,13 @@ The web application itself was built using the Vue framework with Vite, and the 
   <a href="https://tailwindcss.com/"><img src="https://img.icons8.com/fluency/48/000000/tailwind_css.png" width="30px" alt="TailwindCSS"></a>
 </p>
 
-## 🎨 | Color Pallete 
-The color pallete was chosen using **Coolors**, and the link to the pallete can be found <a href="https://coolors.co/ede5dc-c6ac8f-2c434d-18242a">here.</a><br>
+## 🎨 | Color Pallete
 
-| Color             | Hex       | 
-| ----------------- | --------- | 
-| Linen             | `#EDE5DC` |
-| Khaki Web         | `#C6AC8F` |
-| Charcoal          | `#2C434D` |
-| Charleston Green  | `#18242A` |
+The color pallete was chosen using **Coolors**, and the link to the pallete can be found <a href="https://coolors.co/ededed-b4555b-474747-333333">here.</a><br>
 
-
-## ⚖ | License <a name="license"></a>
-This repository is under the [MIT](https://opensource.org/licenses/MIT) license.
-
-If you wish to fork this project, or use it as a template for your own portfolio website, feel free to do so but please provide proper attribution.
+| Color       | Hex       |
+| ----------- | --------- |
+| Platinum    | `#EDEDED` |
+| Dusty Mauve | `#B4555B` |
+| Iron Grey   | `#474747` |
+| Graphite    | `#333333` |
