@@ -28,7 +28,11 @@
 
     <!-- About -->
     <li class="w-[145px] mx-auto py-2 text-main bg-inherit">
-      <a href="#about" class="flex flex-col justify-center bg-inherit">
+      <a
+        href="#about"
+        class="flex flex-col justify-center bg-inherit"
+        @click.prevent="scrollToSection('#about')"
+      >
         <span class="text-accent bg-inherit mx-auto">01. </span>
         <span class="text-main bg-inherit mx-auto hover:text-accent"
           >About Me</span
@@ -38,7 +42,11 @@
 
     <!-- Projects -->
     <li class="w-[145px] mx-auto py-5 text-main hover:text-accent bg-inherit">
-      <a href="#projects" class="flex flex-col mx-auto bg-inherit">
+      <a
+        href="#projects"
+        class="flex flex-col mx-auto bg-inherit"
+        @click.prevent="scrollToSection('#projects')"
+      >
         <span class="text-accent mx-auto bg-inherit">02. </span>
         <span class="text-main bg-inherit mx-auto hover:text-accent"
           >Projects</span
@@ -48,7 +56,11 @@
 
     <!-- Contact -->
     <li class="w-[145px] mx-auto py-2 text-main hover:text-accent bg-inherit">
-      <a href="#contact" class="flex flex-col mx-auto bg-inherit">
+      <a
+        href="#contact"
+        class="flex flex-col mx-auto bg-inherit"
+        @click.prevent="scrollToSection('#contact')"
+      >
         <span class="text-accent mx-auto bg-inherit">03. </span>
         <span class="text-main bg-inherit mx-auto hover:text-accent"
           >Contact</span
@@ -60,7 +72,7 @@
     <li class="mx-auto py-5 text-main hover:text-accent bg-inherit">
       <form method="get" action="/files/resume.pdf">
         <button
-          class="text-accent bg-accent bg-opacity-25 rounded-md px-5 py-1 border-accent border-[2px] hover:scale-105 hover:bg-opacity-0"
+          class="text-main bg-accent bg-opacity-25 rounded-md px-5 py-1 border-accent border-[2px] scale-105 hover:bg-opacity-100"
           type="submit"
         >
           Resume
@@ -80,7 +92,11 @@
     >
       <!-- About -->
       <li class="my-auto mx-1 p-5 text-main hover:text-accent bg-inherit">
-        <a href="#about" class="bg-inherit">
+        <a
+          href="#about"
+          class="bg-inherit"
+          @click.prevent="scrollToSection('#about')"
+        >
           <span class="text-accent bg-inherit">01.</span>
           About
         </a>
@@ -88,7 +104,11 @@
 
       <!-- Projects -->
       <li class="my-auto mx-1 p-5 text-main hover:text-accent bg-inherit">
-        <a href="#projects" class="bg-inherit">
+        <a
+          href="#projects"
+          class="bg-inherit"
+          @click.prevent="scrollToSection('#projects')"
+        >
           <span class="text-accent bg-inherit">02.</span>
           Projects
         </a>
@@ -96,7 +116,11 @@
 
       <!-- Contact -->
       <li class="my-auto mx-1 p-5 text-main hover:text-accent bg-inherit">
-        <a href="#contact" class="bg-inherit">
+        <a
+          href="#contact"
+          class="bg-inherit"
+          @click.prevent="scrollToSection('#contact')"
+        >
           <span class="text-accent bg-inherit">03.</span>
           Contact
         </a>
@@ -162,37 +186,51 @@
 </template>
 
 <script>
+  import { smoothScroll } from "../utils/smoothScroll";
+
   export default {
     name: "nav-bar",
+
     data() {
       return {
-        showHiddenDiv,
-        showClose,
+        showHiddenDiv: false,
+        showClose: true,
+        prevScrollPos: window.pageYOffset,
       };
     },
+
     methods: {
       toggleHidden() {
         this.showHiddenDiv = !this.showHiddenDiv;
         this.showClose = !this.showClose;
       },
+
+      scrollToSection(hash) {
+        smoothScroll(hash, 80);
+      },
+
+      handleScroll() {
+        const currentScrollPos = window.pageYOffset;
+        const navbar = document.getElementById("navbar");
+
+        if (!navbar) return;
+
+        if (this.prevScrollPos > currentScrollPos) {
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = "-80px";
+        }
+
+        this.prevScrollPos = currentScrollPos;
+      },
     },
-  };
 
-  // Initial States
-  let showHiddenDiv = false;
-  let showClose = true;
-  var prevScrollpos = window.pageYOffset;
+    mounted() {
+      window.addEventListener("scroll", this.handleScroll);
+    },
 
-  // Show Navbar on Scroll
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    console.log(currentScrollPos);
-
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-80px";
-    }
-    prevScrollpos = currentScrollPos;
+    beforeUnmount() {
+      window.removeEventListener("scroll", this.handleScroll);
+    },
   };
 </script>
