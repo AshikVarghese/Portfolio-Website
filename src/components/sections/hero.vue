@@ -17,8 +17,8 @@
     <!-- Description -->
     <p class="text-base ssm:text-base-sm">
       I am a Master’s student in International Information Systems (M.Sc.),
-      focused on tech management, building exceptional digital experiences,
-      andexploring diverse technologies.
+      focused on tech management, building exceptional digital experiences, and
+      exploring diverse technologies.
     </p>
 
     <!-- Learn More Button -->
